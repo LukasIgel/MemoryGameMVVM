@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.memorygamemvvm.viewmodel.MemoryGameViewModel" />
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/flipCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.flipCounter}"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TableRow>
+                <Button
+                    android:id="@+id/card00"
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(0)}"
+                    android:text="@{viewModel.card00}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(1)}"
+                    android:text="@{viewModel.card01}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(2)}"
+                    android:text="@{viewModel.card02}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/card03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(3)}"
+                    android:text="@{viewModel.card03}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(4)}"
+                    android:text="@{viewModel.card04}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(5)}"
+                    android:text="@{viewModel.card05}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/card06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(6)}"
+                    android:text="@{viewModel.card06}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(7)}"
+                    android:text="@{viewModel.card07}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(8)}"
+                    android:text="@{viewModel.card08}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/card09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(9)}"
+                    android:text="@{viewModel.card09}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(10)}"
+                    android:text="@{viewModel.card10}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/card11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="@{()-> viewModel.onButtonClicked(11)}"
+                    android:text="@{viewModel.card11}"
+                    android:textSize="36sp"
+                    bind:ignore="SpeakableTextPresentCheck" />
+            </TableRow>
+
+
+        </TableLayout>
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
